@@ -1,8 +1,8 @@
 {
   "version": "1.0.0",
-  "name": "asp.net",
+  "name": "odetofood",
   "private": true,
   "devDependencies": {
-    "font-awesome": "4.7.0"
+    "datatables.net-bs": "^1.10.24"
   }
 }

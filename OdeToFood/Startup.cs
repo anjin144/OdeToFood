@@ -26,6 +26,7 @@ namespace OdeToFood
             });
 
             services.AddRazorPages();
+            services.AddControllers();
             services.AddScoped<IRestaurantData, SqlRestaurantData>();
         }
 
@@ -45,6 +46,7 @@ namespace OdeToFood
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseNodeModules();
 
             app.UseRouting();
 
@@ -53,6 +55,7 @@ namespace OdeToFood
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
             });
         }
     }
